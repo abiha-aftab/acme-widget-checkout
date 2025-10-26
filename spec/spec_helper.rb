@@ -44,7 +44,13 @@ RSpec.configure do |config|
   # triggering implicit auto-inclusion in groups with matching metadata.
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
-  # Load Product class for tests
+  # Load all required classes for tests
   require_relative '../lib/product'
+  require_relative '../lib/invoice'
+  require_relative '../lib/delivery_calculator'
+  require_relative '../lib/delivery_rule'
+  require_relative '../lib/basket'
+  require_relative '../lib/offers/buy_one_get_second_half_price'
+  require_relative '../lib/offer'
 end
   
