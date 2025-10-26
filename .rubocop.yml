@@ -1,6 +1,7 @@
 AllCops:
   TargetRubyVersion: 3.2
   NewCops: enable
+  SuggestExtensions: false
   Exclude:
     - 'spec/spec_helper.rb'
 
@@ -11,5 +12,11 @@ Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
 
+Metrics/MethodLength:
+  Max: 15
+
 Layout/LineLength:
   Max: 120
+
+Lint/MissingSuper:
+  Enabled: false
